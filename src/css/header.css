@@ -1,0 +1,89 @@
+.wrapper-header {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.text-header {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.custom-icon:hover{
+    color: #04764e;
+}
+
+.hover-icon-navbar {
+    position: relative;
+}
+
+.hover-icon-navbar::before,
+.hover-icon-navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #04764e;
+    transform: scaleY(0);
+    transition: transform 0.5s ease;
+}
+
+.hover-icon-navbar::after {
+    right: 50px;
+    transform-origin: center bottom;
+}
+
+.hover-icon-navbar:hover::after {
+    transform-origin: center top;
+    transform: scaleY(1.06);
+}
+
+.navbar-laptop{
+    transform: translateX(150px);
+    transition: all .5s ease-in-out;
+}
+
+.navbar-laptop.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+.navbar-laptop.hide{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(150px);
+}
+
+.custom-icon.backend{
+    transform: rotateY(180deg);
+}
+
+.custom-icon.frontend{
+    transform: rotateY(-180deg);
+}
+
+.bars-icon{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.custom-icon.show{
+    opacity: 1;
+    visibility: visible;
+    transform: rotateY(0deg);
+}
+
+.custom-icon.hide{
+    opacity: 0;
+    visibility: hidden;
+    transform: rotateY(-90deg);
+}

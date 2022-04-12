@@ -1,0 +1,29 @@
+.wrapper-banner{
+    height: 800px;
+    position: relative;
+}
+
+.bg-banner{
+    width: 65%;
+    height: 680px;
+    background-color: #f1f1f1;
+    border-bottom-right-radius: 300px;
+}
+
+.txt-header{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.btn-buy-banner{
+    padding: 1.2rem 2rem;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: -2rem;
+}
+
+.position-buy-banner{
+    display: flex;
+    position: relative;
+}
