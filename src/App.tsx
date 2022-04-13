@@ -3,18 +3,20 @@ import Home from './view/Home';
 import DetailProduct from './view/DetailProduct';
 import Header from './component/Header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Product from './view/Product';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detail/:id" element={<DetailProduct />} />
+          <Route path="/product" element={<Product />} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

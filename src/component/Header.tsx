@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
 
@@ -16,8 +17,16 @@ function Header() {
                 </div>
                 <div style={{ height: '300px' }}></div>
                 <div className={navbar ? 'navbar-laptop show' : ' navbar-laptop hide'}>
-                    <div className='hover-icon-navbar'><i className='fa fa-home custom-icon'></i></div>
-                    <div className='hover-icon-navbar mt-3'><i className='fa fa-coffee custom-icon'></i></div>
+                    <div className='hover-icon-navbar'>
+                        <NavLink
+                            to='/'
+                            onClick={() => setNavbar(!navbar)}
+                            className={({ isActive }) => (isActive ? 'fa fa-home custom-icon active' : 'fa fa-home custom-icon')}>
+                        </NavLink>
+                    </div>
+                    <div className='hover-icon-navbar mt-3'>
+                        <NavLink to='/product' onClick={() => setNavbar(!navbar)} className={({ isActive }) => (isActive ? 'fa fa-coffee custom-icon active' : 'fa fa-coffee custom-icon')}></NavLink>
+                    </div>
                     <div className='hover-icon-navbar mt-3'><i className='fa fa-shopping-bag custom-icon'></i></div>
                     <div className='hover-icon-navbar mt-3'><i className='fa fa-rocket custom-icon'></i></div>
                 </div>

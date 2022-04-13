@@ -1,29 +1,104 @@
-.wrapper-banner{
+.wrapper-banner {
     height: 800px;
     position: relative;
 }
 
-.bg-banner{
-    width: 65%;
+.bg-banner {
+    width: 68%;
     height: 680px;
     background-color: #f1f1f1;
     border-bottom-right-radius: 300px;
 }
 
-.txt-header{
+.txt-header {
     font-size: 35px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.btn-buy-banner{
+.btn-buy-banner {
     padding: 1.2rem 2rem;
     font-size: 20px;
     color: #fff;
     position: absolute;
     top: -2rem;
+    cursor: pointer;
 }
 
-.position-buy-banner{
+.btn-buy-banner:hover {
+    background-color: #046442;
+}
+
+.position-buy-banner {
     display: flex;
     position: relative;
+}
+
+.group-product-hot-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-product-hot-banner {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: -3rem;
+    left: 5%;
+}
+
+.text-intro-banner{
+    position: absolute;
+    font-size: 270px;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    top: 3rem;
+    left: 77%;
+}
+
+.text-product-hot-banner {
+    position: absolute;
+    width: 83%;
+    bottom: 10px;
+    left: 0;
+}
+
+.image-intro-banner{
+    position: absolute;
+    top: 23%;
+    left: 50%;
+}
+
+.grid-product-hot-banner {
+    position: relative;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.grid-product-hot-banner:hover {
+    cursor: pointer;
+    animation: jelly .5s;
+}
+
+@keyframes jelly {
+
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+    }
 }

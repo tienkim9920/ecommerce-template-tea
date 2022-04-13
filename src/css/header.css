@@ -2,7 +2,7 @@
     display: flex;
     justify-content: end;
     position: fixed;
-    width: 100%;
+    left: 95%;
     z-index: 999;
 }
 
@@ -13,32 +13,6 @@
 
 .custom-icon:hover{
     color: #04764e;
-}
-
-.hover-icon-navbar {
-    position: relative;
-}
-
-.hover-icon-navbar::before,
-.hover-icon-navbar::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 5px;
-    background-color: #04764e;
-    transform: scaleY(0);
-    transition: transform 0.5s ease;
-}
-
-.hover-icon-navbar::after {
-    right: 50px;
-    transform-origin: center bottom;
-}
-
-.hover-icon-navbar:hover::after {
-    transform-origin: center top;
-    transform: scaleY(1.06);
 }
 
 .navbar-laptop{
@@ -86,4 +60,8 @@
     opacity: 0;
     visibility: hidden;
     transform: rotateY(-90deg);
+}
+
+.custom-icon.active{
+    color: #04764e;
 }

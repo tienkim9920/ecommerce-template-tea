@@ -19,6 +19,7 @@ body{
     margin-right: 4rem;
     transform: rotateY(0);
     transition: all .3s ease-in-out;
+    text-decoration: none;
 }
 
 .custom-icon-35{
@@ -32,6 +33,10 @@ body{
 
 .color-main{
     color: #04764e;
+}
+
+.color-second{
+    color: #f1f1f1;
 }
 
 .color-grey{
@@ -70,6 +75,10 @@ body{
     width: 40%;
 }
 
+.w-35{
+    width: 35%;
+}
+
 .w-30{
     width: 30%;
 }
@@ -80,6 +89,14 @@ body{
 
 .font-weight-300{
     font-weight: 300;
+}
+
+.txt-label-120{
+    font-size: 120px;
+}
+
+.txt-label-110{
+    font-size: 110px;
 }
 
 .txt-label-100{
@@ -130,8 +147,16 @@ body{
     font-size: 20px;
 }
 
+.mt-025{
+    margin-top: .25rem;
+}
+
 .mt-05{
     margin-top: .5rem;
+}
+
+.mt-075{
+    margin-top: .75rem;
 }
 
 .mt-1{
@@ -186,6 +211,22 @@ body{
     padding-top: 3rem;
 }
 
+.pt-4{
+    padding-top: 4rem;
+}
+
+.pt-5{
+    padding-top: 5rem;
+}
+
+.pt-6{
+    padding-top: 6rem;
+}
+
+.pt-7{
+    padding-top: 7rem;
+}
+
 .pl-1{
     padding-left: 1rem;
 }
@@ -216,6 +257,18 @@ body{
 
 .pl-8{
     padding-left: 8rem;
+}
+
+.pl-9{
+    padding-left: 9rem;
+}
+
+.pl-10{
+    padding-left: 10rem;
+}
+
+.pl-11{
+    padding-left: 11rem;
 }
 
 .pr-1{

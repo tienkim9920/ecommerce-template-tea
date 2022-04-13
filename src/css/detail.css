@@ -1,0 +1,57 @@
+.wrapper-detail-product {
+    height: 1040px;
+    position: relative;
+}
+
+.bg-banner-detail {
+    width: 78%;
+    height: 100%;
+    background-color: #f1f1f1;
+    animation: moveRight .75s ease-in-out;
+}
+
+.btn-count-detail{
+    background-color: #04764e;
+    padding: .6rem 1.2rem;
+    cursor: pointer;
+}
+
+.btn-count-detail:hover{
+    background-color: #046442;
+}
+
+.group-size{
+    cursor: pointer;
+}
+
+.btn-buy-detail {
+    width: 357px;
+    padding: 1rem 0;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.image-intro-detail{
+    position: absolute;
+    top: 13%;
+    left: 40%;
+    animation: moveRight .75s ease-in-out;
+}
+
+.image-intro-detail img{
+    width: 800px;
+    height: 800px;
+}
+
+@keyframes moveRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
