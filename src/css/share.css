@@ -47,6 +47,10 @@ body{
     color: #333333;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .w-100{
     width: 100%;
 }
@@ -171,6 +175,14 @@ body{
     margin-top: 3rem;
 }
 
+.mt-4{
+    margin-top: 4rem;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
 .ml-1{
     margin-left: 1rem;
 }
@@ -193,6 +205,18 @@ body{
 
 .mr-3{
     margin-right: 3rem;
+}
+
+.p-1{
+    padding: 1rem;
+}
+
+.p-2{
+    padding: 2rem;
+}
+
+.p-3{
+    padding: 3rem;
 }
 
 .pt-1{
@@ -283,6 +307,30 @@ body{
     padding-right: 3rem;
 }
 
+.pr-4{
+    padding-right: 4rem;
+}
+
+.pr-5{
+    padding-right: 5rem;
+}
+
+.pr-6{
+    padding-right: 6rem;
+}
+
+.pb-1{
+    padding-bottom: 1rem;
+}
+
+.pb-2{
+    padding-bottom: 2rem;
+}
+
+.pb-3{
+    padding-bottom: 3rem;
+}
+
 .d-flex{
     display: flex;
 }
@@ -291,6 +339,14 @@ body{
     justify-content: center;
 }
 
+.justify-content-end{
+    justify-content: flex-end;
+}
+
 .justify-content-between{
     justify-content: space-between;
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }

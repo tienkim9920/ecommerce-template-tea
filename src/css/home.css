@@ -1,6 +1,7 @@
 .wrapper-banner {
     height: 800px;
     position: relative;
+    animation: fadeShow .75s ease-in-out;
 }
 
 .bg-banner {
@@ -56,6 +57,15 @@
     left: 77%;
 }
 
+.text-intro-banner-50{
+    position: absolute;
+    font-size: 220px;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    top: 3rem;
+    left: 79%;
+}
+
 .text-product-hot-banner {
     position: absolute;
     width: 83%;
@@ -78,13 +88,71 @@
     cursor: pointer;
 }
 
+.group-products{
+    margin: auto auto;
+    width: 65%;
+    height: 400px;
+    position: relative;
+    padding: 5rem 0 0 0;
+}
+
+.box-product-image{
+    margin: 0 3rem;
+    background-color: #04764e;
+    width: 60%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-product-content{
+    margin: 0 3rem;
+    width: 40%;
+    height: 330px;
+    border-radius: 20px;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    z-index: 99;
+}
+
+.bg-box-product-content{
+    background-color: rgb(255, 255, 255, .2);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+
+.box-product-content-reserve{
+    margin: 0 3rem;
+    width: 40%;
+    height: 330px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    z-index: 99;
+}
+
+.shadow-right{
+    box-shadow: 3px 5px 6px rgb(151, 151, 151, .5);
+}
+
+.shadow-left{
+    box-shadow: 0px 5px 5px rgb(151, 151, 151, .5);
+}
+
 .grid-product-hot-banner:hover {
     cursor: pointer;
     animation: jelly .5s;
 }
 
-@keyframes jelly {
 
+@keyframes jelly {
     0%,
     100% {
         transform: scale(1, 1);
@@ -100,5 +168,16 @@
 
     75% {
         transform: scale(0.95, 1.05);
+    }
+}
+
+@keyframes fadeShow {
+    0%{
+        opacity: 0;
+        /* transform: scale(.9); */
+    }
+    100%{
+        opacity: 1;
+        /* transform: scale(1); */
     }
 }
