@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import tradao from '../assets/tradao.png';
 import logo from '../assets/logo_color.png';
+import ButtonIcon from '../component/ButtonIcon';
+import CategorySize from '../component/CategorySize';
+import Footer from '../component/Footer';
 
 function Home(props: any) {
 
@@ -10,6 +13,42 @@ function Home(props: any) {
   const gotoDetail = () => {
     router('/detail/1');
   }
+
+  const [categoryTemp, setCategoryTemp] = useState<any>([
+    {
+      id: 1,
+      name: 'Trà Trái Cây',
+      countProduct: '20 loại',
+    },
+    {
+      id: 2,
+      name: 'Trà Sữa',
+      countProduct: '15 loại',
+    },
+    {
+      id: 3,
+      name: 'Coffee',
+      countProduct: '10 loại',
+    },
+  ]);
+
+  const [sizeTemp, setSizeTemp] = useState<any>([
+    {
+      id: 1,
+      name: 'Nhỏ',
+      countProduct: '30.000đ',
+    },
+    {
+      id: 2,
+      name: 'Vừa',
+      countProduct: '35.000đ',
+    },
+    {
+      id: 3,
+      name: 'Lớn',
+      countProduct: '40.000đ',
+    },
+  ]);
 
   return (
     <div className="wrapper-banner">
@@ -24,25 +63,12 @@ function Home(props: any) {
         <div className='pt-3 pl-11'>
           <div className='mt-1 txt-label-20 color-dark-333'>Ombee sẽ mang lại niềm vui cho bạn</div>
           <div className='mt-2 txt-label-100 color-main font-weight-700 d-flex'>
-            <div><img src={logo} width="100px" height="100px" /></div>
+            <div><img src={logo} className='logo-title-banner-home' /></div>
             <div className='ml-1'>Ombee</div>
           </div>
           <div className='mt-2 txt-label-20 color-dark-333 w-40'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias temporibus
             fugit dignissimos ab obcaecati excepturi aut est nobis odit sapiente porro cumque corrupti, cum recusandae illum impedit nostrum tempora velit.</div>
-          <div className='mt-3 txt-label-20 color-dark-333 w-30 d-flex justify-content-between'>
-            <div>
-              <div className='font-weight-700'>Trà Trái Cây</div>
-              <div className='mt-05 color-grey'>20 loại</div>
-            </div>
-            <div>
-              <div className='font-weight-700'>Trà Sữa</div>
-              <div className='mt-05 color-grey'>15 loại</div>
-            </div>
-            <div>
-              <div className='font-weight-700'>Coffee</div>
-              <div className='mt-05 color-grey'>10 loại</div>
-            </div>
-          </div>
+          <CategorySize data={categoryTemp} width={35} category={'product'} />
         </div>
       </div>
       <div className='position-buy-banner pl-11'>
@@ -71,68 +97,84 @@ function Home(props: any) {
           </div>
         </div>
       </div>
-      <div className='group-products'>
-        <div className="box-product-image">
-          <img src={tradao} width="370px" height="370px" />
-        </div>
-        <div className="box-product-content">
-          <div className="bg-box-product-content shadow-right">
-            <div className="p-2 color-dark-333">
-              <div className='txt-label-40 font-weight-700'>Hãy cùng đồng hành với Ombee</div>
-              <div className='mt-2' style={{ letterSpacing: '1px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur quo, officia, praesentium
-                fuga possimus adipisci necessitatibus beatae odio veniam, perspiciatis dicta quaerat a modi ex eius sed aliquid non!</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='group-products'>
-        <div className='d-flex justify-content-end'>
-          <div className="box-product-image">
-            <img src={tradao} width="370px" height="370px" />
-          </div>
-        </div>
-        <div className="box-product-content-reserve">
-          <div className="bg-box-product-content shadow-left">
-            <div className="p-2 color-dark-333">
-              <div className='txt-label-40 font-weight-700'>Hãy cùng đồng hành với Ombee</div>
-              <div className='mt-2' style={{ letterSpacing: '1px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur quo, officia, praesentium
-                fuga possimus adipisci necessitatibus beatae odio veniam, perspiciatis dicta quaerat a modi ex eius sed aliquid non!</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='group-products'>
-        <div className="box-product-image">
-          <img src={tradao} width="370px" height="370px" />
-        </div>
-        <div className="box-product-content">
-          <div className="bg-box-product-content shadow-right">
-            <div className="p-2 color-dark-333">
-              <div className='txt-label-40 font-weight-700'>Hãy cùng đồng hành với Ombee</div>
-              <div className='mt-2' style={{ letterSpacing: '1px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur quo, officia, praesentium
-                fuga possimus adipisci necessitatibus beatae odio veniam, perspiciatis dicta quaerat a modi ex eius sed aliquid non!</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='group-products'>
-        <div className='d-flex justify-content-end'>
-          <div className="box-product-image">
-            <img src={tradao} width="370px" height="370px" />
-          </div>
-        </div>
-        <div className="box-product-content-reserve">
-          <div className="bg-box-product-content shadow-left">
-            <div className="p-2 color-dark-333">
-              <div className='txt-label-40 font-weight-700'>Hãy cùng đồng hành với Ombee</div>
-              <div className='mt-2' style={{ letterSpacing: '1px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur quo, officia, praesentium
-                fuga possimus adipisci necessitatibus beatae odio veniam, perspiciatis dicta quaerat a modi ex eius sed aliquid non!</div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="image-intro-banner">
-        <img src={tradao} alt="" />
+        <img src={tradao} />
+      </div>
+      <div className="bg-image-reason mt-6">
+        <div className='txt-label-20 text-center' style={{ fontStyle: 'italic' }}>
+          <h2>Tại sao chọn <span className='color-main'>Ombee</span></h2>
+        </div>
+        <div className="d-flex justify-content-center mt-3">
+            <div className="text-center">
+              <img className="w-30" src="//theme.hstatic.net/200000232135/1000682292/14/img_item_support_home_1.png?v=274" alt="Giao hàng nhanh chóng" />
+              <div className="support-text">
+                <h2>Giao hàng nhanh chóng</h2>
+                <span>Giao hàng từ 15-20 phút kể từ lúc đặt hàng</span>
+              </div>
+            </div>
+            <div className="text-center">
+              <img className="w-30" src="//theme.hstatic.net/200000232135/1000682292/14/img_item_support_home_2.png?v=274" alt="Sản phẩm chất lượng" />
+              <div className="support-text">
+                <h2>Sản phẩm chất lượng</h2>
+                <span>Đóng gói cẩn thận, gọn gàng khi đến tay khách hàng</span>
+              </div>
+            </div>
+            <div className="text-center">
+              <img className="w-30" src="//theme.hstatic.net/200000232135/1000682292/14/img_item_support_home_3.png?v=274" alt="Hỗ trợ 24/7" />
+              <div className="support-text">
+                <h2>Hỗ trợ 24/7</h2>
+                <span>Hỗ trợ và lắng nghe ý kiến khác hàng</span>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div className='grid-group-products mt-3'>
+        <div className="group-products-left border-top-right d-flex justify-content-center">
+          <img className='mt-3' src={tradao} width="100%" height="85%" />
+        </div>
+        <div className="group-products-right">
+          <div className='txt-label-40 color-dark-333'>Trà Đào</div>
+          <div className="mt-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
+            Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
+          </div>
+          <CategorySize data={sizeTemp} width={80} category={'product'} />
+          <div className='mt-2'>
+            <ButtonIcon width="70" text="Xem chi tiết" icon="fa fa-eye" />
+          </div>
+        </div>
+      </div>
+      <div className='grid-group-products mt-3'>
+        <div className="group-products-right">
+          <div className='txt-label-40 color-dark-333'>Trà Đào</div>
+          <div className="mt-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
+            Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
+          </div>
+          <CategorySize data={sizeTemp} width={80} category={'product'} />
+          <div className='mt-2'>
+            <ButtonIcon width="70" text="Xem chi tiết" icon="fa fa-eye" />
+          </div>
+        </div>
+        <div className="group-products-left border-top-left d-flex justify-content-center">
+          <img className='mt-3' src={tradao} width="100%" height="85%" />
+        </div>
+      </div>
+      <div className='grid-group-products mt-3'>
+        <div className="group-products-left border-top-right d-flex justify-content-center">
+          <img className='mt-3' src={tradao} width="100%" height="85%" />
+        </div>
+        <div className="group-products-right">
+          <div className='txt-label-40 color-dark-333'>Trà Đào</div>
+          <div className="mt-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
+            Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
+          </div>
+          <CategorySize data={sizeTemp} width={80} category={'product'} />
+          <div className='mt-2'>
+            <ButtonIcon width="70" text="Xem chi tiết" icon="fa fa-eye" />
+          </div>
+        </div>
       </div>
       <div className='bg-about-product'>
         <div className='pt-5 txt-label-60 color-main font-weight-700 d-flex justify-content-center'>
@@ -158,6 +200,7 @@ function Home(props: any) {
         </div>
       </div>
       <div className='text-intro-banner font-weight-700 color-main'>Ombee</div>
+      <Footer />
     </div>
   );
 }

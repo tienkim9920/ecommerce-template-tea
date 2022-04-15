@@ -31,6 +31,10 @@ body{
     background-color: #04764e;
 }
 
+.bg-color-main:hover{
+    background-color: #046442;
+}
+
 .color-main{
     color: #04764e;
 }
@@ -181,6 +185,22 @@ body{
 
 .mt-5{
     margin-top: 5rem;
+}
+
+.mt-6{
+    margin-top: 6rem;
+}
+
+.mt-7{
+    margin-top: 7rem;
+}
+
+.mt-8{
+    margin-top: 8rem;
+}
+
+.mt-9{
+    margin-top: 9rem;
 }
 
 .ml-1{
@@ -335,6 +355,10 @@ body{
     display: flex;
 }
 
+li{
+    list-style: none;
+}
+
 .justify-content-center{
     justify-content: center;
 }
@@ -347,6 +371,22 @@ body{
     justify-content: space-between;
 }
 
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
 .cursor-pointer{
     cursor: pointer;
+}
+
+.border-top-right{
+    border-radius: 10px 250px 10px 10px;
+}
+
+.border-top-left{
+    border-radius: 250px 10px 10px 10px;
+}
+
+a{
+    text-decoration: none;
 }

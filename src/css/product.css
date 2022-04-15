@@ -7,8 +7,7 @@
 .bg-banner-product {
     width: 75%;
     height: 862px;
-    background-color: #fff;
-
+    background-color: #fff !important;
     border-bottom-right-radius: 300px;
 }
 
@@ -42,16 +41,6 @@
     backdrop-filter: blur(15px);
 }
 
-.bg-about-product{
-    margin-top: 6rem;
-    background-image: url(../assets/bg-green-tea-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 600px;
-}
-
 .active-line-product{
     width: 14%;
     border-bottom: 7px solid #04764e;
@@ -67,4 +56,33 @@
 
 .active-line-product.move-right-line{
     transform: translateX(300px);
+}
+
+.grid-page-products{
+    width: 60%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    background-image: url(../assets/bg_team.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 6rem;
+}
+
+.box-page-product{
+    width: 350px;
+    height: 280px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+    border-radius: 150px 10px 150px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pos-image-page-product{
+    position: absolute;
+    top: -40%;
+    left: 25%;
 }

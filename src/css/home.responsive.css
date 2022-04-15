@@ -1,0 +1,19 @@
+@media screen and (max-width: 450px){
+    .image-intro-banner{
+        display: none;
+    }
+
+    .text-intro-banner{
+        display: none;
+    }
+
+    .logo-title-banner-home{
+        width: 60px;
+        height: 60px;
+    }
+
+    .bg-banner{
+        height: 500px;
+        border-bottom-right-radius: 0px;
+    }
+}

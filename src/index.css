@@ -3,3 +3,10 @@
 @import './css/share.css';
 @import './css/detail.css';
 @import './css/product.css';
+@import './css/footer.css';
+@import './css/pagination.css';
+
+/* Responsive */
+@import './css/header.responsive.css';
+@import './css/home.responsive.css';
+@import './css/share.responsive.css';

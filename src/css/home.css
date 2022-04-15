@@ -1,5 +1,5 @@
 .wrapper-banner {
-    height: 800px;
+    /* height: 800px; */
     position: relative;
     animation: fadeShow .75s ease-in-out;
 }
@@ -9,6 +9,11 @@
     height: 680px;
     background-color: #f1f1f1;
     border-bottom-right-radius: 300px;
+}
+
+.logo-title-banner-home{
+    width: 100px;
+    height: 100px;
 }
 
 .txt-header {
@@ -24,10 +29,6 @@
     position: absolute;
     top: -2rem;
     cursor: pointer;
-}
-
-.btn-buy-banner:hover {
-    background-color: #046442;
 }
 
 .position-buy-banner {
@@ -75,7 +76,7 @@
 
 .image-intro-banner{
     position: absolute;
-    top: 23%;
+    top: 3%;
     left: 50%;
 }
 
@@ -88,69 +89,49 @@
     cursor: pointer;
 }
 
-.group-products{
-    margin: auto auto;
-    width: 65%;
-    height: 400px;
-    position: relative;
-    padding: 5rem 0 0 0;
-}
-
-.box-product-image{
-    margin: 0 3rem;
-    background-color: #04764e;
-    width: 60%;
-    height: 100%;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-}
-
-.box-product-content{
-    margin: 0 3rem;
-    width: 40%;
-    height: 330px;
-    border-radius: 20px;
-    position: absolute;
-    top: 23%;
-    left: 50%;
-    z-index: 99;
-}
-
-.bg-box-product-content{
-    background-color: rgb(255, 255, 255, .2);
-    width: 100%;
-    height: 100%;
-    position: relative;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
-    border-radius: 20px;
-}
-
-.box-product-content-reserve{
-    margin: 0 3rem;
-    width: 40%;
-    height: 330px;
-    border-radius: 20px;
-    position: absolute;
-    top: 20%;
-    left: 0%;
-    z-index: 99;
-}
-
-.shadow-right{
-    box-shadow: 3px 5px 6px rgb(151, 151, 151, .5);
-}
-
-.shadow-left{
-    box-shadow: 0px 5px 5px rgb(151, 151, 151, .5);
-}
-
 .grid-product-hot-banner:hover {
     cursor: pointer;
     animation: jelly .5s;
 }
 
+.grid-group-products{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    margin: auto auto;
+    height: 600px;
+}
+
+.group-products-left{
+    width: 90%;
+    margin: 3rem 3rem 0 3rem;
+    background-color: #f1f1f1;
+}
+
+.group-products-right{
+    margin: 8rem 0 0 6rem;
+    width: 70%;
+}
+
+.bg-about-product{
+    margin-top: 8rem;
+    background-image: url(../assets/bg-green-tea-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+}
+
+.bg-image-reason{
+    background: url(//theme.hstatic.net/200000232135/1000682292/14/bg_collection_home_1.jpg?v=273);
+    background-size: cover;
+    padding: 80px 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
 
 @keyframes jelly {
     0%,

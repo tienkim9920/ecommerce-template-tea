@@ -6,8 +6,8 @@ function Header() {
     const [navbar, setNavbar] = useState<any>(false);
 
     return (
-        <div className="wrapper-header">
-            <div>
+        <div>
+            <div className="wrapper-header-laptop">
                 <div className='mt-2'>
                     <div className='bars-icon' onClick={() => setNavbar(!navbar)}>
                         <i className={navbar ? 'fa fa-bars absolute custom-icon hide' : 'fa fa-bars absolute custom-icon show'}></i>
@@ -30,6 +30,9 @@ function Header() {
                     <div className='hover-icon-navbar mt-3'><i className='fa fa-shopping-bag custom-icon'></i></div>
                     <div className='hover-icon-navbar mt-3'><i className='fa fa-rocket custom-icon'></i></div>
                 </div>
+            </div>
+            <div className="wrapper-header-mobile">
+                123
             </div>
         </div>
     );

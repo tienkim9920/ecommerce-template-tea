@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo_color.png';
 import tradao from '../assets/tradao.png';
+import ButtonIcon from '../component/ButtonIcon';
 
 function DetailProduct() {
 
@@ -94,10 +95,7 @@ function DetailProduct() {
             </div>
           </div>
           <div className='mt-3'>
-            <div className='d-flex justify-content-center btn-buy-detail bg-color-main'>
-              <i className='fa fa-shopping-bag' style={{ fontSize: '24px'}}></i>
-              <div className='ml-1'>Thêm vào giỏ hàng</div>
-            </div>
+            <ButtonIcon width="23.8" text="Thêm vào giỏ hàng" icon="fa fa-shopping-bag" />
           </div>
         </div>
       </div>

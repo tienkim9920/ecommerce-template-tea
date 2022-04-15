@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import bgBanner from '../assets/bg-product-green-tea.jpg';
 import logo from '../assets/logo_color.png';
 import tradao from '../assets/tradao.png';
+import Footer from '../component/Footer';
+import Pagination from '../component/Pagination';
 
 const TRASUA = 'TRASUA';
 const TRATRAICAY = 'TRATRAICAY';
@@ -61,10 +63,78 @@ function Product() {
                         <div className={CHANGE_CATEGORY(category)}></div>
                     </div>
                 </div>
-                
             </div>
-        </div>
 
+            <div className="grid-page-products">
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+                <div className='box-page-product mt-9'>
+                    <div className='pb-3 pl-3 pr-3'>
+                        <div className='txt-label-30'>Trà Đào</div>
+                        <div className='txt-label-20 mt-1'>30.000đ</div>
+                    </div>
+                    <div className='pos-image-page-product'><img src={tradao} width="300px" alt="" /></div>
+                </div>
+            </div>
+            {/* <div className='mt-4'>
+                <Pagination />
+            </div> */}
+            <Footer />
+        </div>
     );
 }
 
