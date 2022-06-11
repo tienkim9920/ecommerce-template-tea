@@ -1,5 +1,13 @@
-@media screen and (max-width: 450px){
-    .wrapper-header-laptop{
-        display: none;
+@media screen and (max-width: 1024px) {
+    .wrapper-header-laptop {
+        left: 90.5%;
+    }
+
+    .bars-icon {
+        height: 55px;
+    }
+
+    .hover-icon-navbar {
+        left: 18px;
     }
 }

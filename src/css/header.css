@@ -1,8 +1,6 @@
 .wrapper-header-laptop {
-    display: flex;
-    justify-content: end;
     position: fixed;
-    left: 95%;
+    left: 92.5%;
     z-index: 999;
 }
 
@@ -11,11 +9,35 @@
     font-size: 35px;
 }
 
-.custom-icon:hover{
-    color: #04764e;
+.hover-icon-navbar{
+    position: absolute;
+    left: 16px;
+}
+
+.hover-icon-navbar:nth-child(1){
+    top: 30px;
+}
+
+.hover-icon-navbar:nth-child(2){
+    top: 100px;
+}
+
+.hover-icon-navbar:nth-child(3){
+    top: 170px;
+}
+
+.hover-icon-navbar:last-child{
+    top: 240px;
 }
 
 .navbar-laptop{
+    position: absolute;
+    left: -5px;
+    top: 13rem;
+    background-color: #04764e;
+    border-radius: 50px;
+    width: 70px;
+    height: 310px;
     transform: translateX(150px);
     transition: all .5s ease-in-out;
 }
@@ -42,12 +64,16 @@
 
 .bars-icon{
     position: relative;
+    background-color: #04764e;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
 }
 
-.absolute{
+.absolute-icon-header{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 9.5px;
+    left: 13px;
 }
 
 .custom-icon.show{
@@ -63,5 +89,5 @@
 }
 
 .custom-icon.active{
-    color: #04764e;
+    color: #fff;
 }

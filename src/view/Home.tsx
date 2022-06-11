@@ -55,26 +55,26 @@ function Home(props: any) {
       <div className="bg-banner">
         <div className="d-flex justify-content-between">
           <div className='txt-header pt-1-5 pl-3 color-dark-333'>Ombee</div>
-          <div className='txt-label-25 pt-2 color-dark-333 mr-2'>
-            <i className='fa fa-phone custom-icon-35 mr-1'></i>
-            +847 6355 7366
+          <div className='d-flex txt-label-25 pt-2 color-dark-333 mr-2'>
+            <i className='fa fa-phone custom-icon-35'></i>
+            <div>+847 6355 7366</div>
           </div>
         </div>
-        <div className='pt-3 pl-11'>
-          <div className='mt-1 txt-label-20 color-dark-333'>Ombee sẽ mang lại niềm vui cho bạn</div>
-          <div className='mt-2 txt-label-100 color-main font-weight-700 d-flex'>
+        <div className='pt-1 pl-9'>
+          <div className='txt-label-20 color-dark-333'>Ombee sẽ mang lại niềm vui cho bạn</div>
+          <div className='mt-2 txt-label-70 color-main font-weight-700 d-flex'>
             <div><img src={logo} className='logo-title-banner-home' /></div>
             <div className='ml-1'>Ombee</div>
           </div>
-          <div className='mt-2 txt-label-20 color-dark-333 w-40'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias temporibus
-            fugit dignissimos ab obcaecati excepturi aut est nobis odit sapiente porro cumque corrupti, cum recusandae illum impedit nostrum tempora velit.</div>
+          <div className='mt-1 txt-label-18 color-dark-333 w-70'>Ombee của chúng tôi sẽ phục vụ bạn mọi lúc mọi nơi và mang
+          lại cho bạn một cảm giác rất mới lạ với những hương vị trà sữa khác nhau.</div>
           <CategorySize data={categoryTemp} width={35} category={'product'} />
         </div>
       </div>
-      <div className='position-buy-banner pl-11'>
+      <div className='position-buy-banner pl-9'>
         <div className='btn-buy-banner bg-color-main'>Hãy Đến Với Chúng Tôi</div>
       </div>
-      <div className='group-product-hot-banner w-35 pl-11 pt-7'>
+      <div className='group-product-hot-banner w-40 pl-9 pt-6'>
         <div className="grid-product-hot-banner" onClick={gotoDetail}>
           <img className='image-product-hot-banner' src={tradao} />
           <div className='text-product-hot-banner d-flex justify-content-between pr-1 pl-1'>
@@ -100,7 +100,7 @@ function Home(props: any) {
       <div className="image-intro-banner">
         <img src={tradao} />
       </div>
-      <div className="bg-image-reason mt-6">
+      <div className="bg-image-reason mt-5 pl-6 pr-6 pt-3 pb-3">
         <div className='txt-label-20 text-center' style={{ fontStyle: 'italic' }}>
           <h2>Tại sao chọn <span className='color-main'>Ombee</span></h2>
         </div>
@@ -128,13 +128,13 @@ function Home(props: any) {
             </div>
         </div>
       </div>
-      <div className='grid-group-products mt-3'>
+      <div className='grid-group-products mt-3 pl-9 pr-9'>
         <div className="group-products-left border-top-right d-flex justify-content-center">
-          <img className='mt-3' src={tradao} width="100%" height="85%" />
+          <img className='mt-3' src={tradao} width="90%" height="85%" />
         </div>
-        <div className="group-products-right">
+        <div className="group-products-right margin-gridText-text-left">
           <div className='txt-label-40 color-dark-333'>Trà Đào</div>
-          <div className="mt-2">
+          <div className="txt-label-18 mt-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
             Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
           </div>
@@ -144,29 +144,29 @@ function Home(props: any) {
           </div>
         </div>
       </div>
-      <div className='grid-group-products mt-3'>
-        <div className="group-products-right">
+      <div className='grid-group-products mt-3 pl-9 pr-9'>
+        <div className="group-products-right margin-gridText-text-right">
           <div className='txt-label-40 color-dark-333'>Trà Đào</div>
-          <div className="mt-2">
+          <div className="txt-label-18 mt-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
             Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
           </div>
           <CategorySize data={sizeTemp} width={80} category={'product'} />
-          <div className='mt-2'>
+          <div className='txt-label-18 mt-2'>
             <ButtonIcon width="70" text="Xem chi tiết" icon="fa fa-eye" />
           </div>
         </div>
         <div className="group-products-left border-top-left d-flex justify-content-center">
-          <img className='mt-3' src={tradao} width="100%" height="85%" />
+          <img className='mt-3' src={tradao} width="90%" height="85%" />
         </div>
       </div>
-      <div className='grid-group-products mt-3'>
+      <div className='grid-group-products mt-3 pl-9 pr-9'>
         <div className="group-products-left border-top-right d-flex justify-content-center">
-          <img className='mt-3' src={tradao} width="100%" height="85%" />
+          <img className='mt-3' src={tradao} width="90%" height="85%" />
         </div>
-        <div className="group-products-right">
+        <div className="group-products-right margin-gridText-text-left">
           <div className='txt-label-40 color-dark-333'>Trà Đào</div>
-          <div className="mt-2">
+          <div className="txt-label-18 mt-2">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
             Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
           </div>
@@ -177,9 +177,9 @@ function Home(props: any) {
         </div>
       </div>
       <div className='bg-about-product'>
-        <div className='pt-5 txt-label-60 color-main font-weight-700 d-flex justify-content-center'>
-          <div><img src={logo} width="80px" height="80px" /></div>
-          <div className='ml-1'>Ombee</div>
+        <div className='pt-3 txt-label-60 color-main font-weight-700 d-flex justify-content-center'>
+          <div><img src={logo} width="80px" height="90px" /></div>
+          <div className='mt-1 ml-1'>Ombee</div>
         </div>
         <div className='mt-2 txt-label-40 color-dark-333 d-flex justify-content-center'>Phục vụ toàn thành phố Quy Nhơn</div>
         <div className='mt-2 d-flex justify-content-center'>

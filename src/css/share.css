@@ -39,8 +39,12 @@ body{
     color: #04764e;
 }
 
+.color-white{
+    color: #fff;
+}
+
 .color-second{
-    color: #f1f1f1;
+    color: #f1f1f1 !important;
 }
 
 .color-grey{
@@ -154,6 +158,9 @@ body{
 .txt-label-20{
     font-size: 20px;
 }
+.txt-label-18{
+    font-size: 18px;
+}
 
 .mt-025{
     margin-top: .25rem;
@@ -201,6 +208,14 @@ body{
 
 .mt-9{
     margin-top: 9rem;
+}
+
+.mt-10{
+    margin-top: 10rem;
+}
+
+.mt-15{
+    margin-top: 15rem;
 }
 
 .ml-1{
@@ -337,6 +352,21 @@ body{
 
 .pr-6{
     padding-right: 6rem;
+}
+.pr-7{
+    padding-right: 7rem;
+}
+.pr-8{
+    padding-right: 8rem;
+}
+.pr-9{
+    padding-right: 9rem;
+}
+.pr-10{
+    padding-right: 10rem;
+}
+.pr-11{
+    padding-right: 11rem;
 }
 
 .pb-1{
