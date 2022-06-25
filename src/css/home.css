@@ -1,7 +1,7 @@
 .wrapper-banner {
     /* height: 800px; */
     position: relative;
-    animation: fadeShow .75s ease-in-out;
+    /* animation: fadeShow .75s ease-in-out; */
 }
 
 .bg-banner {
@@ -23,8 +23,8 @@
 }
 
 .btn-buy-banner {
-    padding: 1.2rem 2rem;
-    font-size: 20px;
+    padding: 1rem 1.8rem;
+    font-size: 18px;
     color: #fff;
     position: absolute;
     top: -2rem;
@@ -141,6 +141,11 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50%;
+}
+
+.img-about-product {
+    width: 80px;
+    height: 90px;
 }
 
 @keyframes jelly {

@@ -13,7 +13,7 @@ body{
 }
 
 .custom-icon {
-    font-size: 40px;
+    font-size: 32px;
     color: #333333;
     cursor: pointer;
     margin-right: 4rem;
@@ -23,7 +23,7 @@ body{
 }
 
 .custom-icon-35{
-    font-size:35px;
+    font-size: 35px;
     color: #333333;
 }
 
@@ -160,6 +160,9 @@ body{
 }
 .txt-label-18{
     font-size: 18px;
+}
+.txt-label-16{
+    font-size: 16px;
 }
 
 .mt-025{

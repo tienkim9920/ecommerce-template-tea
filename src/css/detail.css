@@ -7,7 +7,7 @@
     width: 78%;
     height: 100%;
     background-color: #f1f1f1;
-    animation: moveRight .75s ease-in-out;
+    animation: moveRight .5s ease-in;
 }
 
 .btn-count-detail{
@@ -35,7 +35,7 @@
     position: absolute;
     top: 13%;
     left: 40%;
-    animation: moveRight .75s ease-in-out;
+    animation: moveRight .5s ease-in;
 }
 
 .image-intro-detail img{
@@ -45,11 +45,11 @@
 
 @keyframes moveRight {
     0%{
-        opacity: 0;
-        transform: translateX(-250px);
+        /* opacity: .5; */
+        transform: translateX(-300px);
     }
     100%{
-        opacity: 1;
+        /* opacity: 1; */
         transform: translateX(0px);
     }
 }

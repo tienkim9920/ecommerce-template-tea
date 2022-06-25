@@ -3,11 +3,28 @@
         left: 90.5%;
     }
 
-    .bars-icon {
-        height: 55px;
+    .absolute-icon-header {
+        top: 8px;
+        left: 11px;
     }
 
     .hover-icon-navbar {
-        left: 18px;
+        left: 14px;
+    }
+
+    .bars-icon {
+        width: 48.5px;
+        height: 48px;
+    }
+
+    .navbar-laptop {
+        width: 58px;
+        left: -2px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper-header-laptop {
+        left: 89%;
     }
 }

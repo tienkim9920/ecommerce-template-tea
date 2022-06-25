@@ -36,7 +36,7 @@
     top: 13rem;
     background-color: #04764e;
     border-radius: 50px;
-    width: 70px;
+    width: 62px;
     height: 310px;
     transform: translateX(150px);
     transition: all .5s ease-in-out;
@@ -65,8 +65,8 @@
 .bars-icon{
     position: relative;
     background-color: #04764e;
-    width: 60px;
-    height: 60px;
+    width: 53px;
+    height: 53px;
     border-radius: 5px;
 }
 

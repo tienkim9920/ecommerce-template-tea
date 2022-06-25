@@ -78,22 +78,22 @@ function Home(props: any) {
         <div className="grid-product-hot-banner" onClick={gotoDetail}>
           <img className='image-product-hot-banner' src={tradao} />
           <div className='text-product-hot-banner d-flex justify-content-between pr-1 pl-1'>
-            <div className='font-weight-700'>Trà Đào</div>
-            <div className='color-main' style={{ backgroundColor: '#fff', padding: '2px 12px', borderRadius: '20px' }}>Hot</div>
+            <div className='font-weight-700 txt-label-16'>Trà Đào</div>
+            <div className='color-main txt-label-16' style={{ backgroundColor: '#fff', padding: '2px 8px', borderRadius: '20px' }}>Mới</div>
           </div>
         </div>
         <div className="grid-product-hot-banner">
           <img className='image-product-hot-banner' src={tradao} />
           <div className='text-product-hot-banner d-flex justify-content-between pr-1 pl-1'>
-            <div className='font-weight-700'>Trà Đào</div>
-            <div className='color-main' style={{ backgroundColor: '#fff', padding: '2px 12px', borderRadius: '20px' }}>Hot</div>
+            <div className='font-weight-700 txt-label-16'>Trà Đào</div>
+            <div className='color-main txt-label-16' style={{ backgroundColor: '#fff', padding: '2px 8px', borderRadius: '20px' }}>Mới</div>
           </div>
         </div>
         <div className="grid-product-hot-banner">
           <img className='image-product-hot-banner' src={tradao} />
           <div className='text-product-hot-banner d-flex justify-content-between pr-1 pl-1'>
-            <div className='font-weight-700'>Trà Đào</div>
-            <div className='color-main' style={{ backgroundColor: '#fff', padding: '2px 12px', borderRadius: '20px' }}>Hot</div>
+            <div className='font-weight-700 txt-label-16'>Trà Đào</div>
+            <div className='color-main txt-label-16' style={{ backgroundColor: '#fff', padding: '2px 8px', borderRadius: '20px' }}>Mới</div>
           </div>
         </div>
       </div>
@@ -134,26 +134,26 @@ function Home(props: any) {
         </div>
         <div className="group-products-right margin-gridText-text-left">
           <div className='txt-label-40 color-dark-333'>Trà Đào</div>
-          <div className="txt-label-18 mt-2">
+          <div className="txt-label-18 mt-2 font-weight-300">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
             Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
           </div>
           <CategorySize data={sizeTemp} width={80} category={'product'} />
           <div className='mt-2'>
-            <ButtonIcon width="70" text="Xem chi tiết" icon="fa fa-eye" />
+            <ButtonIcon width="100" text="Xem chi tiết" icon="fa fa-eye" />
           </div>
         </div>
       </div>
       <div className='grid-group-products mt-3 pl-9 pr-9'>
         <div className="group-products-right margin-gridText-text-right">
           <div className='txt-label-40 color-dark-333'>Trà Đào</div>
-          <div className="txt-label-18 mt-2">
+          <div className="txt-label-18 mt-2 font-weight-300">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
             Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
           </div>
           <CategorySize data={sizeTemp} width={80} category={'product'} />
           <div className='txt-label-18 mt-2'>
-            <ButtonIcon width="70" text="Xem chi tiết" icon="fa fa-eye" />
+            <ButtonIcon width="100" text="Xem chi tiết" icon="fa fa-eye" />
           </div>
         </div>
         <div className="group-products-left border-top-left d-flex justify-content-center">
@@ -166,22 +166,22 @@ function Home(props: any) {
         </div>
         <div className="group-products-right margin-gridText-text-left">
           <div className='txt-label-40 color-dark-333'>Trà Đào</div>
-          <div className="txt-label-18 mt-2">
+          <div className="txt-label-18 mt-2 font-weight-300">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut libero dicta eligendi debitis beatae possimus?
             Unde fuga autem, vel aspernatur quo, soluta quisquam, exercitationem in dignissimos porro doloremque rem.
           </div>
           <CategorySize data={sizeTemp} width={80} category={'product'} />
           <div className='mt-2'>
-            <ButtonIcon width="70" text="Xem chi tiết" icon="fa fa-eye" />
+            <ButtonIcon width="100" text="Xem chi tiết" icon="fa fa-eye" />
           </div>
         </div>
       </div>
       <div className='bg-about-product'>
-        <div className='pt-3 txt-label-60 color-main font-weight-700 d-flex justify-content-center'>
-          <div><img src={logo} width="80px" height="90px" /></div>
-          <div className='mt-1 ml-1'>Ombee</div>
+        <div className='pt-3 color-main font-weight-700 d-flex justify-content-center'>
+          <div><img className='img-about-product' src={logo} /></div>
+          <div className='mt-1 ml-1 txt-label-50'>Ombee</div>
         </div>
-        <div className='mt-2 txt-label-40 color-dark-333 d-flex justify-content-center'>Phục vụ toàn thành phố Quy Nhơn</div>
+        <div className='mt-2 txt-label-35 color-dark-333 d-flex justify-content-center'>Phục vụ toàn thành phố Quy Nhơn</div>
         <div className='mt-2 d-flex justify-content-center'>
           <div className='mt-3 txt-label-20 color-dark-333 w-50 d-flex justify-content-between'>
             <div className='text-center'>
