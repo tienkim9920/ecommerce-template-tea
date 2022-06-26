@@ -139,3 +139,42 @@
         width: 50%;
     }
 }
+
+@media screen and (max-width: 426px) { 
+
+    .mt-3 {
+        margin-top: 2.5rem;
+    }
+    
+    .pt-2 {
+        padding-top: 1.5rem;
+    }
+
+    .pl-9 {
+        padding-left: 2rem;
+    }
+
+    .pr-9 {
+        padding-right: 2rem;
+    }
+
+    .pr-6 {
+        padding-right: 1rem;
+    }
+
+    .pl-6 {
+        padding-left: 1rem;
+    }
+
+    .w-35 {
+        width: 60%;
+    }
+
+    .w-40 {
+        width: 80%;
+    }
+
+    .txt-label-50 {
+        font-size: 25px;
+    }
+}

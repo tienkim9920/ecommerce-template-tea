@@ -4,6 +4,10 @@
     z-index: 999;
 }
 
+.wrapper-header-mobile {
+    display: none;
+}
+
 .text-header {
     font-weight: 700;
     font-size: 35px;

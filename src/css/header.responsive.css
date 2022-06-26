@@ -28,3 +28,31 @@
         left: 89%;
     }
 }
+
+@media screen and (max-width: 426px) {
+    .wrapper-header-laptop {
+        display: none;
+    }
+
+    .wrapper-header-mobile {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        z-index: 999;
+        background-color: #fff;
+        padding: 1.2rem 0;
+        border-radius: 40px 40px 0 0;
+        box-shadow: 0px 2px 7px #e0e0e0, 0px -2px 7px #e0e0e0;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .custom-icon {
+        margin-right: 0rem;
+    }
+}

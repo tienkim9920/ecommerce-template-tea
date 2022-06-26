@@ -29,9 +29,21 @@ function Header() {
                     <div className='hover-icon-navbar'><i className='fa fa-rocket custom-icon'></i></div>
                 </div>
             </div>
-            {/* <div className="wrapper-header-mobile">
-                123
-            </div> */}
+            <div className="wrapper-header-mobile">
+                <div className='navbar-mobile'>
+                    <div>
+                        <NavLink
+                            to='/'
+                            className={({ isActive }) => (isActive ? 'fa fa-home custom-icon color-main' : 'fa fa-home custom-icon color-grey')}>
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink to='/product' className={({ isActive }) => (isActive ? 'fa fa-coffee custom-icon active' : 'fa fa-coffee custom-icon color-grey')}></NavLink>
+                    </div>
+                    <div><i className='fa fa-shopping-bag custom-icon color-grey'></i></div>
+                    <div><i className='fa fa-rocket custom-icon color-grey'></i></div>
+                </div>
+            </div>
         </div>
     );
 }

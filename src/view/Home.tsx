@@ -108,15 +108,15 @@ function Home(props: any) {
             <div className="text-center">
               <img className="w-30" src="//theme.hstatic.net/200000232135/1000682292/14/img_item_support_home_1.png?v=274" alt="Giao hàng nhanh chóng" />
               <div className="support-text">
-                <h2>Giao hàng nhanh chóng</h2>
+                <h2>Giao hàng nhanh</h2>
                 <span>Giao hàng từ 15-20 phút kể từ lúc đặt hàng</span>
               </div>
             </div>
             <div className="text-center">
               <img className="w-30" src="//theme.hstatic.net/200000232135/1000682292/14/img_item_support_home_2.png?v=274" alt="Sản phẩm chất lượng" />
               <div className="support-text">
-                <h2>Sản phẩm chất lượng</h2>
-                <span>Đóng gói cẩn thận, gọn gàng khi đến tay khách hàng</span>
+                <h2>Sản phẩm tốt</h2>
+                <span>Đóng gói cẩn thận, gọn gàng sản phẩm</span>
               </div>
             </div>
             <div className="text-center">
@@ -144,7 +144,7 @@ function Home(props: any) {
           </div>
         </div>
       </div>
-      <div className='grid-group-products mt-3 pl-9 pr-9'>
+      <div className='grid-group-products middle mt-3 pl-9 pr-9'>
         <div className="group-products-right margin-gridText-text-right">
           <div className='txt-label-40 color-dark-333'>Trà Đào</div>
           <div className="txt-label-18 mt-2 font-weight-300">

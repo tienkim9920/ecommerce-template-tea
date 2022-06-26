@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <div className="wrapper-footer pt-3 pb-3 pr-9 pl-9">
-            <div className="d-flex justify-content-between">
+            <div className="group-footer">
                 <div>
                     <h2 className="footer-title txt-label-25">Giới thiệu</h2>
                     <div className='txt-label-18'>Đây là cửa hàng trà sữa chuyên phục vụ</div>
