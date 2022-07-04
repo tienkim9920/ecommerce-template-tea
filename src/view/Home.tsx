@@ -179,21 +179,21 @@ function Home(props: any) {
       <div className='bg-about-product'>
         <div className='pt-3 color-main font-weight-700 d-flex justify-content-center'>
           <div><img className='img-about-product' src={logo} /></div>
-          <div className='mt-1 ml-1 txt-label-50'>Ombee</div>
+          <div className='mt-1 ml-1 txt-label-40'>Ombee</div>
         </div>
-        <div className='mt-2 txt-label-35 color-dark-333 d-flex justify-content-center'>Phục vụ toàn thành phố Quy Nhơn</div>
+        <div className='mt-2 txt-label-30 color-dark-333 d-flex justify-content-center'>Phục vụ toàn thành phố Quy Nhơn</div>
         <div className='mt-2 d-flex justify-content-center'>
-          <div className='mt-3 txt-label-20 color-dark-333 w-50 d-flex justify-content-between'>
+          <div className='mt-1 txt-label-20 color-dark-333 w-50 d-flex justify-content-between'>
             <div className='text-center'>
-              <div className='txt-label-50 font-weight-700'>1000+</div>
+              <div className='txt-label-35 font-weight-700'>1000+</div>
               <div className='mt-05 color-grey'>Khách hàng</div>
             </div>
             <div className='text-center'>
-              <div className='txt-label-50 font-weight-700'>2000+</div>
+              <div className='txt-label-35 font-weight-700'>2000+</div>
               <div className='mt-05 color-grey text-center'>Lượt tìm kiếm hàng tháng</div>
             </div>
             <div className='text-center'>
-              <div className='txt-label-50 font-weight-700'>3000+</div>
+              <div className='txt-label-35 font-weight-700'>3000+</div>
               <div className='mt-05 color-grey'>Theo dõi Fanpage</div>
             </div>
           </div>

@@ -105,7 +105,7 @@
 }
 
 .group-products-left{
-    width: 90%;
+    width: 80%;
     margin: 3rem 3rem 0 3rem;
     background-color: #f1f1f1;
 }
@@ -115,28 +115,28 @@
 }
 
 .margin-gridText-text-right {
-    margin: 9rem 0 0 3rem;
+    margin: 7rem 0 0 3rem;
     width: 80%;
 }
 
 .margin-gridText-text-left {
-    margin: 9rem 0 0 6rem;
+    margin: 7rem 0 0 6rem;
     width: 80%;
 }
 
 .bg-about-product{
     margin-top: 6rem;
-    background-image: url(../assets/bg-green-tea-2.jpg);
+    background-image: url(../assets/bg-green-gray.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     width: 100%;
-    height: 470px;
+    height: 380px;
 }
 
 .bg-image-reason{
-    background: url(//theme.hstatic.net/200000232135/1000682292/14/bg_collection_home_1.jpg?v=273);
+    background: url(../assets/bg-green-gray.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -144,8 +144,8 @@
 }
 
 .img-about-product {
-    width: 80px;
-    height: 90px;
+    width: 60px;
+    height: 70px;
 }
 
 @keyframes jelly {
